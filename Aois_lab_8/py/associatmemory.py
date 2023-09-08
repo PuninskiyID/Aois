@@ -146,7 +146,7 @@ class AssociatMemory:
         memory = self.Normalize()
         memory = [[memory[i][j] for i in range(self.size)] for j in range(self.size)]
         passValidationByMask = list(filter(lambda x: x[:3] == mask, memory))
-        print(f'Mask: {"".join(str(i) for i in mask)}')
+        print(f'V: {"".join(str(i) for i in mask)}')
         print('Passed validation: ')
         newWords = []
         for i in passValidationByMask:
